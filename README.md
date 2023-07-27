@@ -4,7 +4,7 @@
 
 ​		基于开源社区开发者的行为事件数据，对于开发者协作网络进行抽取:
 
-<img src="D:\文档\个人文档\Typora\OpenSODA比赛\assets\绘图2-1690425483457-7.png" />
+<img src="assets/绘图1-1690423991883-4.png" alt="绘图1" style="zoom:67%;" />
 
 ​		基于开发者在 GitHub 上的六种活动：提交 Issue，回复 Issue，提交 Pull Request (PR)，回复 PR，审查 PR 和合并 PR。以下是关键的步骤：
 
@@ -12,7 +12,7 @@
 2. 开发者通过他们的 actor_id 来区分，而他们所处理的 Issues 或 PRs 通过 issue_number 来区分。每个独特的 actor_id 或 issue_number 被视为网络中的一个节点。
 3. 为了减少由机器人账号造成的噪声（因为它们会自动操作并关联大量的 Issues），通过查找帐号中的“-bot”、“-robot”和“[bot]”等关键词来识别并排除这些机器人账号。
 
-<img src="D:\文档\个人文档\Typora\OpenSODA比赛\assets\绘图2-1690425483457-7.png" />
+<img src="assets/绘图2-1690425483457-7.png" alt="绘图2" style="zoom:67%;" />
 
 ​		在上图上部虚线框内，开源社区由开发者A、开发者B、开发者C及三个Issue（编号1，2，3）组成。开发者A创建了1号Issue，开发者B评论并向2号Issue提交PR，开发者C审查此PR并创建3号Issue以及与开发者B进行讨论。由此构成一个初步的二分图。
 

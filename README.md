@@ -32,7 +32,7 @@ LeaderRank 算法针对此问题进行了改进，在网络中加入一个背景
 
 ![1](http://latex.codecogs.com/svg.latex?P_{ij}=\frac{\beta(ij)}{u_i})
 
-其中，i 和 j 代表节点，且 i, j=1,2,...,N+1，u~i~ 表示 i 节点的邻居节点数量，若 i 与 j 相连，则 β(ij) 为 1，否则为 0。
+其中，i 和 j 代表节点，且 i, j=1,2,...,N+1，u<sub>i</sub> 表示 i 节点的邻居节点数量，若 i 与 j 相连，则 β(ij) 为 1，否则为 0。
 
 ![2](http://latex.codecogs.com/svg.latex?R_k=\sum_{j=1}^{N+1}\frac{\beta(ij)}{u_i}R_j(k-1))
 

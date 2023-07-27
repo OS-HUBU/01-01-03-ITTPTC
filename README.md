@@ -33,13 +33,12 @@ LeaderRank 算法针对此问题进行了改进，在网络中加入一个背景
 ![1](http://latex.codecogs.com/svg.latex?P_{ij}=\frac{\beta(ij)}{u_i})
 
 其中，i 和 j 代表节点，且 i, j=1,2,...,N+1，u~i~ 表示 i 节点的邻居节点数量，若 i 与 j 相连，则 β(ij) 为 1，否则为 0。
-$$
-R_k=\sum_{j=1}^{N+1}\frac{\beta(ij)}{u_i}R_j(k-1)
-$$
+
+![2](http://latex.codecogs.com/svg.latex?R_k=\sum_{j=1}^{N+1}\frac{\beta(ij)}{u_i}R_j(k-1))
+
 ​	其中，R~i~(k) 表示 i 节点经过 k 次迭代后的值，反复迭代 m 次后，R~i~ 收敛到一个稳定的值，记作：R~i~(m~c~)，最后把稳态后背景节点 g 的 R~g~(m~c~) 平均分配给其他节点。
-$$
-R_i=R_i(m_c)+\frac{N}{R_g(m_c)}
-$$
+
+![3](http://latex.codecogs.com/svg.latex?R_i=R_i(m_c)+\frac{N}{R_g(m_c)})
 
 以下是VSCode项目中角色分类与识别效果：
 

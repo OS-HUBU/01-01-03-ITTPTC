@@ -4,7 +4,7 @@
 
 ​		基于开源社区开发者的行为事件数据，对于开发者协作网络进行抽取:
 
-<img src="D:\文档\个人文档\Typora\OpenSODA比赛\assets\绘图1-1690423991883-4.png" alt="绘图1" style="zoom:67%;" />
+<img assets/绘图1-1690423991883-4.png style="zoom:67%;" />
 
 ​		基于开发者在 GitHub 上的六种活动：提交 Issue，回复 Issue，提交 Pull Request (PR)，回复 PR，审查 PR 和合并 PR。以下是关键的步骤：
 

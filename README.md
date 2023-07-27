@@ -29,17 +29,13 @@
 LeaderRank 算法在 PageRank 算法基础上进行了改进，得到的一种新的节点排序方式。PageRank 算法存在的问题：用于不连通的子网，网页的排名不一致。 
 
 LeaderRank 算法针对此问题进行了改进，在网络中加入一个背景节点，让背景节点和网络中的每一个节点连接。由于背景节点的加入保证网络强连通性，解决了 PageRank 中节点排序和概率跳转的问题，并能够加快算法收敛的速度，最后，背景节点的分值被均匀的分散到网络其他节点。 LeaderRank 计算方式：首先赋给背景节点 g 一个初始值 R<sub>j</sub>=0，然后原网络中每一个节点都分配一个 Ri 值。根据节点度将 Ri 值平均分给邻居节点。整个过程不断迭代，直到达到稳定状态，用 P<sub>ij</sub> 表示随机游走过程：
-
-![1](http://latex.codecogs.com/svg.latex?P_{ij}=\frac{\beta(ij)}{u_i})
-
 <p align="center">
   <img src="http://latex.codecogs.com/svg.latex?P_{ij}=\frac{\beta(ij)}{u_i}">
 </p>
-
 其中，i 和 j 代表节点，且 i, j=1,2,...,N+1，u<sub>i</sub> 表示 i 节点的邻居节点数量，若 i 与 j 相连，则 β(ij) 为 1，否则为 0。
-
-![2](http://latex.codecogs.com/svg.latex?R_k=\sum_{j=1}^{N+1}\frac{\beta(ij)}{u_i}R_j(k-1))
-
+<p align="center">
+  <img src=![2](http://latex.codecogs.com/svg.latex?R_k=\sum_{j=1}^{N+1}\frac{\beta(ij)}{u_i}R_j(k-1))>
+</p>
 其中，R<sub>i</sub>(k) 表示 i 节点经过 k 次迭代后的值，反复迭代 m 次后，R<sub>i</sub> 收敛到一个稳定的值，记作：R<sub>i</sub>(m<sub>c</sub>)，最后把稳态后背景节点 g 的 R<sub>g</sub>(m<sub>c</sub>) 平均分配给其他节点。
 
 ![3](http://latex.codecogs.com/svg.latex?R_i=R_i(m_c)+\frac{N}{R_g(m_c)})

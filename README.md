@@ -34,7 +34,7 @@ LeaderRank 算法针对此问题进行了改进，在网络中加入一个背景
 </p>
 其中，i 和 j 代表节点，且 i, j=1,2,...,N+1，u<sub>i</sub> 表示 i 节点的邻居节点数量，若 i 与 j 相连，则 β(ij) 为 1，否则为 0。
 <p align="center">
-  <img src=![2](http://latex.codecogs.com/svg.latex?R_k=\sum_{j=1}^{N+1}\frac{\beta(ij)}{u_i}R_j(k-1))>
+  <img src="http://latex.codecogs.com/svg.latex?R_k=\sum_{j=1}^{N+1}\frac{\beta(ij)}{u_i}R_j(k-1))">
 </p>
 其中，R<sub>i</sub>(k) 表示 i 节点经过 k 次迭代后的值，反复迭代 m 次后，R<sub>i</sub> 收敛到一个稳定的值，记作：R<sub>i</sub>(m<sub>c</sub>)，最后把稳态后背景节点 g 的 R<sub>g</sub>(m<sub>c</sub>) 平均分配给其他节点。
 

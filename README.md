@@ -36,7 +36,7 @@ LeaderRank 算法针对此问题进行了改进，在网络中加入一个背景
 
 ![2](http://latex.codecogs.com/svg.latex?R_k=\sum_{j=1}^{N+1}\frac{\beta(ij)}{u_i}R_j(k-1))
 
-​其中，R~i~(k) 表示 i 节点经过 k 次迭代后的值，反复迭代 m 次后，R~i~ 收敛到一个稳定的值，记作：R~i~(m~c~)，最后把稳态后背景节点 g 的 R~g~(m~c~) 平均分配给其他节点。
+其中，R<sub>i</sub>(k) 表示 i 节点经过 k 次迭代后的值，反复迭代 m 次后，R<sub>i</sub> 收敛到一个稳定的值，记作：R<sub>i</sub>(m<sub>c</sub>)，最后把稳态后背景节点 g 的 R<sub>g</sub>(m<sub>c</sub>) 平均分配给其他节点。
 
 ![3](http://latex.codecogs.com/svg.latex?R_i=R_i(m_c)+\frac{N}{R_g(m_c)})
 
